@@ -1,0 +1,7 @@
+{
+    "name": "my-app",
+    "version": "0.0.1",
+    "electron_version": "1.4.3",
+    "main": "main.js",
+    "dependencies": {}
+}

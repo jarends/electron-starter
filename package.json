@@ -1,0 +1,21 @@
+{
+    "name": "my-app-project",
+    "version": "0.0.1",
+    "scripts": {
+        "postinstall": "npm start",
+        "build-mac": "grunt build-mac",
+        "build-win32": "grunt build-win32",
+        "build-win64": "grunt build-win64",
+        "build-win": "grunt build-win",
+        "build-all": "grunt build-all",
+        "open": "grunt open",
+        "start": "grunt run"
+    },
+    "dependencies": {},
+    "devDependencies": {
+        "electron": "^1.4.3",
+        "electron-packager": "^8.1.0",
+        "grunt": "^1.0.1",
+        "grunt-shell": "^2.0.0"
+    }
+}
