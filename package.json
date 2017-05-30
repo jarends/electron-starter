@@ -1,21 +1,22 @@
 {
     "name": "my-app-project",
-    "version": "0.0.1",
+    "version": "0.0.2",
+    "description": "Build system for my-app.",
+    "main": "./js/builder.js",
     "scripts": {
-        "postinstall": "npm start",
-        "build-mac": "grunt build-mac",
-        "build-win32": "grunt build-win32",
-        "build-win64": "grunt build-win64",
-        "build-win": "grunt build-win",
-        "build-all": "grunt build-all",
-        "open": "grunt open",
-        "start": "grunt run"
+        "coffee": "coffee -c -w -o ./js ./coffee",
+        "run": "node .",
+        "open": "node . open",
+        "mac": "node . mac",
+        "win": "node . win",
+        "win32": "node . win32",
+        "win64": "node . win64",
+        "all": "node . all"
     },
-    "dependencies": {},
-    "devDependencies": {
-        "electron": "^1.4.3",
-        "electron-packager": "^8.1.0",
-        "grunt": "^1.0.1",
-        "grunt-shell": "^2.0.0"
+    "dependencies": {
+        "cross-spawn": "5.0.1",
+        "electron": "1.6.7",
+        "electron-packager": "8.6.0",
+        "coffee": "^3.3.0"
     }
 }
